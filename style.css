@@ -30,10 +30,7 @@ body {
   border-radius: 10px;
   margin: 2rem;
 }
-.wrapper > * {
-  transform: translateY(20px);
-  transition: transform 0.4s;
-}
+
 .wrapper:hover {
   transform: translateY(-10px);
   transition: transform 0.4s;
@@ -99,12 +96,22 @@ span {
   background-color: var(--White);
   color: var(--Very-dark-grayish-blue);
 }
+
+footer {
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+}
+
 @media screen and (min-width: 1000px) {
   body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    /* justify-content: center; */
   }
   .containers {
+    align-self: center;
     margin: 2rem;
     width: fit-content;
     display: grid;
